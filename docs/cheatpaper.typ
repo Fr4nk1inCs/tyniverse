@@ -1,4 +1,4 @@
-#import "../src/lib.typ": cheatpaper
+#import "@preview/tyniverse:0.2.3": cheatpaper
 
 #show: cheatpaper.template.with(
   title: "Cheat Paper",

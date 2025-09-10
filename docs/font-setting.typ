@@ -1,4 +1,4 @@
-#import "../src/lib.typ": set-font, template
+#import "@preview/tyniverse:0.2.3": set-font, template
 
 #show: template.with(
   title: "Font Setting",

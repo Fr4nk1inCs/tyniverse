@@ -8,7 +8,7 @@
 )
 #set raw(lang: "typc")
 
-#import "../src/lib.typ": template, typesetting
+#import "@preview/tyniverse:0.2.3": template, typesetting
 #import "../src/styles/basic.typ": patch-enum-item, patch-list-item
 
 #set page(height: auto)

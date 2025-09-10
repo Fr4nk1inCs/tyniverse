@@ -1,4 +1,4 @@
-#import "../src/lib.typ": template, homework.simple-question, homework.complex-question
+#import "@preview/tyniverse:0.2.3": homework.complex-question, homework.simple-question, template
 
 #show: template.with(
   title: "Question Frame Manual",

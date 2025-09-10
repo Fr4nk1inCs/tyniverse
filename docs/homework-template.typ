@@ -1,4 +1,4 @@
-#import "../src/lib.typ": homework, template
+#import "@preview/tyniverse:0.2.3": homework, template
 
 #show raw.where(block: true): block.with(
   width: 100%,
