@@ -2,6 +2,20 @@
 name = "typreset"
 version = "0.2.2"
 entrypoint = "src/lib.typ"
-authors = ["Fr4nk1inCs"]
+compiler = "0.12.0"
+
+authors = ["Fr4nk1inCs <@Fr4nk1inCs>"]
 license = "MIT"
-description = "A collection of typst presets for my daily writing."
+description = "A collection of presets (homework, cheatpaper or any documentation)."
+
+exclude = ["assets/*", "docs/*"]
+
+repository = "https://github.com/Fr4nk1inCs/typreset"
+keywords = ["homework", "cheatpaper", "template"]
+categories = ["report"]
+disciplines = ["education"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"

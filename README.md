@@ -1,4 +1,4 @@
-# Typreset (W.I.P.)
+# Typreset
 
 A collection of [Typst](https://typst.app) presets to provide a starting point for your writing.
 
@@ -7,36 +7,27 @@ Available presets:
 - `set-font()`: Chinese & English Font support.
 - `typesetting`: A typesetting preset.
 - `template`: A template for writing a document.
-- `homework`: Homework template and `simple-question` and `complex-question` frame to write your homework.
-- `cheatpaper`: A cheat paper template.
+- `homework`: Homework template with `simple-question` and `complex-question` frame to write your homework.
+- `cheatpaper`: A cheatpaper template.
 
 There are some manuals/docs in the `docs` folder.
 
 ## Usage
 
-Typrest supports Typst 0.12.0 and newer.
-
-At this time there is no release of this project. You need to manually configure your local Typst packages.
-
-- Clone this project to `{data-dir}/typst/packages/local/typreset/0.2.2`, where `data-dir` [depends on your systems](https://github.com/typst/packages#local-packages). For example, in Linux, it is `~/.local/share/typst/packages/local/typreset/0.2.2`:
-
-  ```bash
-  mkdir -p ~/.local/share/typst/packages/local/typreset/
-  git clone https://github.com/Fr4nk1inCs/typreset.git ~/.local/share/typst/packages/local/typreset/0.2.2
-  ```
-
-Then you can use the presets in your Typst project:
+Typrest supports Typst 0.12.0 and newer. You can access it from [Typst Universe](https://typst.app/universe).
 
 ```typ
-#import "@local/typreset:0.2.2": *
+#import "@preview/typreset:0.2.3"
 ```
+
+To install it locally, please refer to [Typst Documentation](https://github.com/typst/packages#local-packages).
 
 ## Examples
 
 ### Basic Template
 
 ```typ
-#import "@local/typreset:0.2.2": template
+#import "@preview/typreset:0.2.3": template
 
 #set page(height: auto)
 #show: template.with(
@@ -54,7 +45,7 @@ For more examples, please see [`docs/template.pdf`](./docs/template.pdf).
 ### Homework
 
 ```typ
-#import "@local/typreset:0.2.2": homework
+#import "@preview/typreset:0.2.3": homework
 
 #set page(height: auto)
 #show: homework.template.with(
@@ -79,7 +70,7 @@ For more examples, please see [`docs/homework-template.pdf`](./docs/homework-tem
 ### Cheat Paper
 
 ```typ
-#import "@local/typreset:0.2.2": cheatpaper
+#import "@preview/typreset:0.2.3": cheatpaper
 
 #show: cheatpaper.template.with(
   title: "Cheat Paper",
