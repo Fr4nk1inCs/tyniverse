@@ -1,4 +1,4 @@
-#import "../src/lib.typ": template, homework
+#import "../src/lib.typ": homework, template
 
 #show raw.where(block: true): block.with(
   width: 100%,
@@ -66,7 +66,7 @@ In the following, each page is an example of the template with different configu
 )
 
 ```typ
-#import "@local/typreset:0.2.0": homework
+#import "preview/tyniverse:0.2.3": homework
 
 #show: homework.template.with(
   course: "Math",
@@ -87,7 +87,7 @@ In the following, each page is an example of the template with different configu
 )
 
 ```typ
-#import "@local/typreset:0.2.0": homework
+#import "preview/tyniverse:0.2.3": homework
 
 #show: homework.template.with(
   course: "Math",
@@ -111,7 +111,7 @@ In the following, each page is an example of the template with different configu
 )
 
 ```typ
-#import "@local/typreset:0.2.0": homework
+#import "preview/tyniverse:0.2.3": homework
 
 #show: homework.template.with(
   course: "Math",

@@ -1,4 +1,4 @@
-# Typreset
+# Tyniverse
 
 A collection of [Typst](https://typst.app) presets to provide a starting point for your writing.
 
@@ -14,10 +14,10 @@ There are some manuals/docs in the `docs` folder.
 
 ## Usage
 
-Typrest supports Typst 0.12.0 and newer. You can access it from [Typst Universe](https://typst.app/universe).
+Tyniverse supports Typst 0.12.0 and newer. You can access it from [Typst Universe](https://typst.app/universe).
 
 ```typ
-#import "@preview/typreset:0.2.3"
+#import "@preview/tyniverse:0.2.3"
 ```
 
 To install it locally, please refer to [Typst Documentation](https://github.com/typst/packages#local-packages).
@@ -27,11 +27,11 @@ To install it locally, please refer to [Typst Documentation](https://github.com/
 ### Basic Template
 
 ```typ
-#import "@preview/typreset:0.2.3": template
+#import "@preview/tyniverse:0.2.3": template
 
 #set page(height: auto)
 #show: template.with(
-  title: ("Example of typreset.template", [Example of `typreset.template`]),
+  title: ("Example of tyniverse.template", [Example of `tyniverse.template`]),
   author-infos: "Author"
 )
 
@@ -45,7 +45,7 @@ For more examples, please see [`docs/template.pdf`](./docs/template.pdf).
 ### Homework
 
 ```typ
-#import "@preview/typreset:0.2.3": homework
+#import "@preview/tyniverse:0.2.3": homework
 
 #set page(height: auto)
 #show: homework.template.with(
@@ -70,7 +70,7 @@ For more examples, please see [`docs/homework-template.pdf`](./docs/homework-tem
 ### Cheat Paper
 
 ```typ
-#import "@preview/typreset:0.2.3": cheatpaper
+#import "@preview/tyniverse:0.2.3": cheatpaper
 
 #show: cheatpaper.template.with(
   title: "Cheat Paper",

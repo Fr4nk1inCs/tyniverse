@@ -1,18 +1,18 @@
-#import "@preview/typreset:0.2.3": homework
+#import "@preview/tyniverse:0.2.3": homework
 
 #show: homework.template.with(
-  course: "Typreset Example",
+  course: "tyniverse Example",
   number: 1,
-  student-infos: ((name: "Author of Typreset", id: "GitHub: @Fr4nk1inCs"),),
+  student-infos: ((name: "Author of tyniverse", id: "GitHub: @Fr4nk1inCs"),),
 )
 
 #let question = homework.complex-question
 
 #question[
-  What is Typreset?
+  What is tyniverse?
 ]
 
-Typreset is a collection of #link("https://typst.app")[Typst] presets to provide a starting point for your writing. As of now, it provides presets for:
+tyniverse is a collection of #link("https://typst.app")[Typst] presets to provide a starting point for your writing. As of now, it provides presets for:
 / `set-font()`: Chinese & English font support.
 / `typesetting`: A typesetting preset.
 / `template`: A template for writing a document.
@@ -20,10 +20,10 @@ Typreset is a collection of #link("https://typst.app")[Typst] presets to provide
 / `cheatpaper`: A cheatpaper template.
 
 #question[
-  How to use Typreset?
+  How to use tyniverse?
 ]
 
 Simply import it from #link("https://typst.app/universe")[Typst Universe]:
 ```typst
-#import "@preview/typreset:0.2.3": homework
+#import "@preview/tyniverse:0.2.3": homework
 ```

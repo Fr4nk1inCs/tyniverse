@@ -17,12 +17,12 @@
 Usage:
 
 ```typ
-#import "@local/typreset:0.2.0": set-font
+#import "@local/tyniverse:0.2.3": set-font
 
 #show: set-font.with(lang: "en")
 ```
 
-All the templates in `Typreset` uses the following language-specific fonts, where `base` is for English and `zh` is for Chinese.
+All the templates in `tyniverse` uses the following language-specific fonts, where `base` is for English and `zh` is for Chinese.
 
 ```
 #let fonts = (

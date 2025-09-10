@@ -9,14 +9,14 @@
 #set raw(lang: "typc")
 
 #import "../src/lib.typ": template, typesetting
-#import "../src/styles/basic.typ": patch-list-item, patch-enum-item
+#import "../src/styles/basic.typ": patch-enum-item, patch-list-item
 
 #set page(height: auto)
 #show: template.with(use-patch: false, title: "Template Examples", author-infos: "Fr4nk1in")
 
 In the following examples, the header of each page is exactly what the template on that page specifies. In practice, the header only displays on the page whose number is greater than one, so the header and the title wouldn't appear on the same page.
 
-We've made the patches for typst's bullet list and numbered list discussed in #link("https://github.com/typst/typst/issues/1204#issuecomment-2447947433", quote[_List and enum markers are not aligned with the baseline of the item's contents_ (\#1204)]) a built-in feature for all the templates in `typreset`. To disable it, pass `use-patch: false` as a template's named argument. If you want to enable only one patch, use `use-patch: (list: false)` or `use-patch: (enum: false)`.
+We've made the patches for typst's bullet list and numbered list discussed in #link("https://github.com/typst/typst/issues/1204#issuecomment-2447947433", quote[_List and enum markers are not aligned with the baseline of the item's contents_ (\#1204)]) a built-in feature for all the templates in `tyniverse`. To disable it, pass `use-patch: false` as a template's named argument. If you want to enable only one patch, use `use-patch: (list: false)` or `use-patch: (enum: false)`.
 
 Example:
 
@@ -57,7 +57,7 @@ In the following, each page is an example of the template with different configu
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: (
@@ -111,7 +111,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: ("single string author-info", [single string `author-info`]),
@@ -137,7 +137,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: (
@@ -164,7 +164,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: "set the header with multiple authors",
@@ -181,7 +181,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: "disable author header",
@@ -198,7 +198,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: "disable header",
@@ -215,7 +215,7 @@ let template(
 )
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: "disable author blocks",
@@ -233,7 +233,7 @@ let template(
 Disable title
 
 ```typ
-#import "@local/typreset:0.2.0": template
+#import "@preview/tyniverse:0.2.3": template
 
 #show: template.with(
   title: "disable title",
